@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36212.18 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oop-pluralsight-2", "oop-pluralsight-2\oop-pluralsight-2.csproj", "{C345C692-BA01-4AE0-A5FC-02BD8F1FCE09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C345C692-BA01-4AE0-A5FC-02BD8F1FCE09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C345C692-BA01-4AE0-A5FC-02BD8F1FCE09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C345C692-BA01-4AE0-A5FC-02BD8F1FCE09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C345C692-BA01-4AE0-A5FC-02BD8F1FCE09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB921FFD-9311-4F4B-A753-290AF4D23F07}
+	EndGlobalSection
+EndGlobal
