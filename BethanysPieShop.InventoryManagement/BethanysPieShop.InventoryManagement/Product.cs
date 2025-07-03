@@ -41,9 +41,25 @@ namespace BethanysPieShop.InventoryManagement
             amountInStock++;
         }
 
+        public void DecreaseStock(int items, string reason)
+        {
+            if (items <= amountInStock)
+            {
+                //decrease stock with the specified number of items
+                amountInStock -= items;
+            }
+            else
+            {
+                amountInStock = 0;
+            }
+
+            UpdateLowStock();
+            Log(reason);
+        }
+
         private void UpdateLowStock()
         {
-            if (amountInStock < 10)
+            if (amountInStock < 10) //fixed value for now
             {
                 isBelowStockThreshold = true;
             }
@@ -53,6 +69,11 @@ namespace BethanysPieShop.InventoryManagement
         {
             //can be written to a file
             Console.WriteLine(message);
+        }
+
+        private string CreateSimpleProductRepresentation()
+        {
+            return $"Product {id} ({name})";
         }
 
     }
