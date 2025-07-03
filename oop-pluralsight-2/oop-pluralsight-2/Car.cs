@@ -11,7 +11,7 @@ namespace oop_pluralsight_2
     {
         private int id; //usable from class itself
         private int temperature; //important data hidden so can't be changed
-        public int Id
+        public int Id //we control how the data changes 
         {
             get { return id; }
             set
@@ -21,6 +21,6 @@ namespace oop_pluralsight_2
             }
         }
        
-
+         
     }
 }
