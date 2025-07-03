@@ -57,6 +57,20 @@ namespace BethanysPieShop.InventoryManagement
             Log(reason);
         }
 
+        public string DisplayFullDetails()
+        {
+            StringBuilder sb = new(); //build or modify strings efficiently, especially in loops or when doing a lot of concatenation.
+            //ToDo: add price here too
+            sb.Append($"{id} {name} \n{description}\n{amountInStock} items in stock");
+
+            if (isBelowStockThreshold)
+            {
+                sb.Append("\n!!STOCK LOW!!");
+            }
+
+            return sb.ToString(); //converts final result back to regular string
+        }
+
         private void UpdateLowStock()
         {
             if (amountInStock < 10) //fixed value for now
