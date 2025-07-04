@@ -49,11 +49,21 @@ namespace BethanysPieShop.InventoryManagement
         public int AmountInStock { get; private set; }
         public bool IsBelowStockThreshold { get; private set; }
 
-        public Product(int id, string name) //constructor
+        public Product(int id) : this(id, string.Empty) //constructor
+        {
+           
+        }
+
+        public Product (int id, string name)
         {
             Id = id;
             Name = name;
+        }
 
+        public Product(int id, string? description, UnitType unitType, int maxAmountInStock)
+        {
+            Id = id;
+            Name = name;
         }
 
         public void UseProduct(int items)
