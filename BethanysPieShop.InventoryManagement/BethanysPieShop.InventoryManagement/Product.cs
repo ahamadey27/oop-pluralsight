@@ -58,12 +58,15 @@ namespace BethanysPieShop.InventoryManagement
         {
             Id = id;
             Name = name;
+            Description = description;
+            UnitType = UnitType;
         }
 
         public Product(int id, string? description, UnitType unitType, int maxAmountInStock)
         {
             Id = id;
             Name = name;
+            Description = description; 
         }
 
         public void UseProduct(int items)
