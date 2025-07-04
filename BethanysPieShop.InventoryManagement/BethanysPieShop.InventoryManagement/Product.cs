@@ -69,6 +69,7 @@ namespace BethanysPieShop.InventoryManagement
             Description = description; 
         }
 
+
         public void UseProduct(int items)
         {
             if (items <= AmountInStock)
